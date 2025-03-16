@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+</head>
+<body>
+    <h1>Hi, Welcome to WVC</h1>
+    <p>Log in first to get the best use out of this site:</p>
+    <form action="">
+        <!-- use the <input> tag as seen on page 153 to get it going, then be sure to use the "placeholder" attribute as
+         seen on page 168-->
+        <p>Username: 
+            <input type="text" name="Username" placeholder="Enter Username" size="14" maxlength="14" />
+        </p>
+        <!-- use form validation as seen on page 165 -->
+        <p>Password: 
+            <input type="password" name="password" placeholder="Enter Password" size="14" maxlength="14" />
+            <!-- add a <button>  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep
+             it simple and write it out like this: <button> Submit</button>-->
+            <button>Submit</button>
+        </p>
+    </form>
+    <!-- insert image of a generic college using the <img> tag as done in previous assignment  - grab image from “unsplash” (be
+     sure to create your "images" folder in the root directory of your assignment's folder) and resize the image using
+     height=”600” width=”450”  basically use exact code found on page 100 -->
+    <img src="images/College.jpg" alt="College" height="600" width="450" />
+    <h2>About the school</h2>
+    <p>We are the best at what we do! From the arts to the sciences, we've got you covered. Here you will find all the 
+        information <br />you need:</p>
+    <p>Course list<br /><br />How to sign up for classes<br /><br />Resource centers<br /><br />Faculty list<br /><br />Campus map</p>
+    <p>Still need more information? No worries! Feel free to use our search bar below!</p>
+    <!-- insert search bar – as seen on page 168, you can use exact code -->
+    <form action="">
+        <p>Search :</p>
+        <input type="search" name="search" placeholder="Enter Search" />
+        <button>Submit</button>
+    </form>
+    <h2>Join our Mailing list!</h2>
+    <!-- emphasize “really” -->
+    <p>If you join our mailing list, you will get exclusive information regarding upcoming events, assignments, and well... more
+        <br />events! Be the first to be “in the know”.  We promise not to spam you. <strong>Really.</strong></p>
+    <!-- insert mailing list – use exact code on page 167, found within the top two boxes – instead of using
+     <input type=”submit”> for a button, please use the actual <button> tag for the next part below -->
+    <form action="">
+        <p>Please enter your email address :</p>
+        <input type="email" name="eamil" placeholder="Enter Email">
+        <!-- insert <button> tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep
+         it simple and write it out like this: <button> Submit</button>  -->
+        <button>Submit</button>
+    </form>
+    <br />
+    <form action="">
+        <p>What kind of music applications do you like using while studying or on the go?</p>
+        <p>You can choose more than one music streaming application:
+        <!--  insert a “checkbox”  which looks like this:   <input type=”checkbox”>  You can use the exact example/code  on page
+         156 in your book  -->
+        <br />
+        <br />
+        <input type="checkbox" name="application" value="Youtube Music" checked="checked" /> Youtube Music
+        <input type="checkbox" name="application" value="Spotify" checked="checked" /> Spotify
+        <input type="checkbox" name="application" value="SoundCloud" checked="checked" /> SoundCloud
+        </p>
+    </form>
+    <br />
+    <form action="">
+        <p>Favorite style of music?
+        <!--  use the radio buttons, exactly as it is written on page 155-->
+        <br />
+        <br />
+        <input type="radio" name="genre" value="Pop" checked="checked" /> Pop
+        <input type="radio" name="genre" value="Rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="Hip-Hop/Rap" checked="checked" /> Hip-Hop/Rap
+        <input type="radio" name="genre" value="Electronic Dance Music (EDM)" checked="checked" /> Electronic Dance Music (EDM)
+        <input type="radio" name="genre" value="Country" checked="checked" /> Country
+        <input type="radio" name="genre" value="Latin Music" checked="checked" /> Latin Music
+        </p>
+    </form>
+    <br />
+    <form action="">
+        <p>Are you a MacOS, Windows, or Linux user?</p>
+        <p>As you browse the internet, which kind of computer OS are you using?
+        <!--  insert a Drop Down List Box - you can use the exact code on page 157, just change the working from ipad, radio,
+          computer to “Windows, MacOS, Linux” -->
+        <br />
+        <br />
+        <select name="computer">
+            <option value="MacOS">MacOS</option>
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+        </select>
+        </p>
+    </form>
+    <h3>Add an image for your profile!</h3>
+    <!--  insert image of self or  if you don't want to use a picture of yourself, use a generic image of a college student from
+      “unsplash” and resize the image using height=”600” width=”600”  use similar code found on page 100-->
+    <img src="images/Student.jpg" alt="College Student" height="600" width="600" />
+    <!--  add file input box – same code on page 159 works-->
+    <form action="" method="post">
+        <input type="file" name="photo" />
+        <input type="submit" value="Upload" />
+    </form>
+    <h3>Contact?</h3>
+    <p>Please use the form below:</p>
+    <!-- use the exact code from page 164 in your book – make sure to change the 3 titles to “First Name” “Last Name” and
+     “Email” -->
+    <fieldset>
+        <legend>Contact information</legend>
+        <label>First Name :<br />
+        <input type="text" name="First Name" /></label><br />
+        <label>Last Name :<br />
+        <input type="text" name="Last Name" /></label><br />
+        <label>Email :<br />
+        <input type="email" name="Email" /></label>
+    </fieldset>
+    <h3>Set a date when you can visit the campus!</h3>
+    <!--  use the exact code found on page 166 -->
+    <form action="">
+        <label for="Username">Campus visit date :</label>
+        <input type="date" name="Campus visit" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
